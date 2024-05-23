@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>ajouter-nouvell-terraine</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="http://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+<style type="text/css">
+*[role="form"] {
+    max-width: 530px;
+    padding: 15px;
+    margin: 0 auto;
+    border-radius: 0.3em;
+    background-color: #f2f2f2;
+}
+*[role="form"] h2 { 
+    font-family: 'Open Sans' , sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    color: #000000;
+    margin-top: 5%;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+#background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+</style>
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div>
+        <div>&nbsp;</div>
+<div>&nbsp;&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+        </div>
+<iframe id="background" src="liste_T.php" frameborder="0"></iframe>
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+
+<div class="container">
+            <form class="form-horizontal" role="form" method="post" action="ajouter.php">
+                <svg id="exitButton" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+                <script>
+                    document.getElementById("exitButton").addEventListener("click", function() {
+                        if (confirm("Êtes-vous sûr de vouloir quitter la page ?")) {
+                            window.location.href = "liste_T.php";
+                        }
+                    });
+                </script>
+                <h2>Ajouter</h2>
+                <div class="form-group">
+                    
+                    <label for="firstName" class="col-sm-3 control-label">ID </label>
+                    <div class="col-sm-9">
+                        <input type="number" id="firstName" placeholder="ID " class="form-control" autofocus name="id">
+                    </div>
+                </div>
+                <div class="form-group">
+
+                    <label for="firstName" class="col-sm-3 control-label">CIN </label>
+                    <div class="col-sm-9">
+                        <input type="text" id="firstName" placeholder="cin" class="form-control" autofocus name="cin">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="lastName" class="col-sm-3 control-label">Nom et Prenom</label>
+                    <div class="col-sm-9">
+                        <input type="text" id="lastName" placeholder="Nom et Prenom" class="form-control" autofocus name="nom">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email" class="col-sm-3 control-label">Localisation</label>
+                    <div class="col-sm-9">
+                        <input type="aderess" id="email" placeholder="localisation" class="form-control" name= "localisation">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="villaImmeubles" class="col-sm-3 control-label">villa/Immeubles</label>
+                    <div class="col-sm-9">
+                        <select id="villaImmeubles" class="form-control" name="villa/immeubles">
+                            <option value="villa">Villa</option>
+                            <option value="immeuble">Immeuble</option>
+                        </select>
+                    </div>
+                </div> 
+                <div class="form-group">
+                    <label for="password" class="col-sm-3 control-label">Nombre des mitre</label>
+                    <div class="col-sm-9">
+                        <input type="number" id="password" placeholder="Mitre" class="form-control" name="mitre">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="password" class="col-sm-3 control-label">Titre Foncier</label>
+                    <div class="col-sm-9">
+                        <input type="text" id="password" placeholder="Titre Foncier" class="form-control" name="titre">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="declaration" class="col-sm-3 control-label">Déclaration</label>
+                    <div class="col-sm-9">
+                        <select id="declaration" class="form-control" name="d/nd">
+                            <option value="Declare">Declare</option>
+                            <option value="NonDeclare">NonDeclare</option>
+                        </select>
+                    </div>
+                </div> 
+                <button type="submit" class="btn btn-primary btn-block">Ajouter</button>
+            </form>
+        </div> 
+</body>
+</html>

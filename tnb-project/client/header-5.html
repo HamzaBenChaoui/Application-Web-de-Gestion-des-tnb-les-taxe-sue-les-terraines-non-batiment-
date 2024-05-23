@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Page Principale</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles/reset.min.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/header-4.css" />
+    <style>
+      button {
+        border: none;
+        padding: 10px 20px;
+        background-color: transparent;
+        color: black;
+        border-radius: 20px;
+        transition: background-color 0.3s ease, border-radius 0.3s ease;
+      }
+      
+      button:hover {
+        background-color: gray;
+        border-radius: 50%;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrapper site-header__wrapper">
+        <div class="site-header__start">
+          <div class="search">
+            <form class="search__form" action="liste_Recherche.php" method="post">
+              <input
+                type="search"
+                name="cin"
+                id="search"
+                placeholder="MC OU TF"
+              />
+              <button >
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="site-header__end">
+          <nav class="nav">
+            <button class="nav__toggle" aria-expanded="false" type="button">
+              menu
+            </button>
+            <ul class="nav__wrapper">
+              <li class="nav__item active">
+                <a href="#">
+                  <svg
+                    viewBox="0 0 24 24"
+                    width="24px"
+                    height="24px"
+                    x="0"
+                    y="0"
+                    preserveAspectRatio="xMinYMin meet"
+                    class="nav-icon"
+                    focusable="false"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M22,9.45,12.85,3.26A1.52,1.52,0,0,0,12,3a1.49,1.49,0,0,0-.84.26L2,9.45,3.06,11,4,10.37V20a1,1,0,0,0,1,1h5V16h4v5h5a1,1,0,0,0,1-1V10.37l.94.63Z"
+                      class="active-item"
+                      style="fill-opacity: 1"
+                    ></path>
+                    <path
+                      d="M22,9.45L12.85,3.26a1.5,1.5,0,0,0-1.69,0L2,9.45,3.06,11,4,10.37V20a1,1,0,0,0,1,1h6V16h2v5h6a1,1,0,0,0,1-1V10.37L20.94,11ZM18,19H15V15a1,1,0,0,0-1-1H10a1,1,0,0,0-1,1v4H6V8.89l6-4,6,4V19Z"
+                      class="inactive-item"
+                      style="fill: currentColor"
+                    ></path>
+                  </svg>
+                  <span>Home</span>
+                </a>
+              </li>
+              <li class="nav__item">
+                <a href="email/index.html">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="256" height="256" viewBox="0 0 256 256" xml:space="preserve">
+                    <defs>
+                    </defs>
+                    <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)" >
+                      <path d="M 81.353 50.79 L 63.143 36.799 l 18.302 -15.87 c 0.834 -0.723 0.924 -1.986 0.2 -2.82 c -0.723 -0.834 -1.985 -0.925 -2.82 -0.201 L 58.682 35.374 c -0.005 0.004 -0.009 0.008 -0.014 0.012 l -4.921 4.267 L 28.669 17.907 c -0.834 -0.724 -2.096 -0.633 -2.82 0.201 c -0.723 0.834 -0.634 2.097 0.201 2.82 l 18.44 15.99 l -12.442 9.912 c -0.864 0.688 -1.006 1.946 -0.318 2.81 c 0.395 0.496 0.977 0.754 1.565 0.754 c 0.436 0 0.876 -0.143 1.244 -0.435 l 13.024 -10.375 l 4.874 4.226 c 0.376 0.326 0.843 0.489 1.31 0.489 c 0.467 0 0.934 -0.163 1.31 -0.489 l 5.002 -4.337 l 18.858 14.488 c 0.363 0.279 0.792 0.414 1.217 0.414 c 0.599 0 1.193 -0.268 1.586 -0.781 C 82.393 52.718 82.229 51.463 81.353 50.79 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                      <path d="M 84.004 10.598 H 23.49 c -3.306 0 -5.996 2.69 -5.996 5.996 v 1.616 c -1.125 -0.827 -2.636 -1.044 -3.982 -0.453 c -0.87 0.383 -2.006 0.88 -3.19 1.394 l -0.032 0.014 c -2.526 1.095 -4.385 1.88 -5.378 2.269 c -0.741 0.29 -1.362 0.72 -1.845 1.278 c -8.173 9.429 1.178 26.658 14.071 39.551 c 9.539 9.539 21.449 17.14 30.82 17.139 c 3.296 -0.001 6.278 -0.941 8.731 -3.066 c 0.557 -0.483 0.987 -1.104 1.278 -1.846 c 0.395 -1.009 1.171 -2.847 2.304 -5.456 c 0.507 -1.168 0.996 -2.286 1.373 -3.144 c 0.621 -1.413 0.355 -3.01 -0.578 -4.148 h 22.939 c 3.307 0 5.996 -2.69 5.996 -5.996 v -39.15 C 90 13.288 87.31 10.598 84.004 10.598 z M 56.603 67.439 c -1.152 2.656 -1.947 4.538 -2.36 5.592 c -0.05 0.127 -0.113 0.23 -0.173 0.282 c -7.118 6.171 -22.543 -2.315 -34.105 -13.877 C 8.402 47.872 -0.078 32.445 6.088 25.331 c 0.053 -0.061 0.156 -0.124 0.283 -0.174 c 1.063 -0.416 2.944 -1.21 5.592 -2.359 v 0 c 1.173 -0.509 2.296 -1 3.168 -1.373 l 7.266 12.256 l -4.505 8.393 c -0.843 1.57 -0.562 3.471 0.698 4.732 l 14.007 14.007 c 1.262 1.26 3.164 1.541 4.731 0.696 l 8.404 -4.505 l 12.245 7.267 l 0.006 0.01 C 57.603 65.144 57.11 66.268 56.603 67.439 z M 86.001 55.744 c 0 1.101 -0.896 1.997 -1.997 1.997 H 54.809 l -7.038 -4.177 c -1.201 -0.712 -2.711 -0.744 -3.942 -0.083 l -8.406 4.503 l -14.008 -14.02 l 4.505 -8.392 c 0.66 -1.231 0.628 -2.741 -0.084 -3.943 l -4.343 -7.319 v -7.716 c 0 -1.101 0.896 -1.997 1.997 -1.997 h 60.514 c 1.101 0 1.997 0.896 1.997 1.997 V 55.744 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                    </g>
+                    </svg>
+                  <span>contacter</span>
+                </a>
+              </li>
+              <li class="nav__item">
+                <a href="majoration/majoration.php">
+                  <svg
+                    viewBox="0 0 24 24"
+                    width="24px"
+                    height="24px"
+                    x="0"
+                    y="0"
+                    preserveAspectRatio="xMinYMin meet"
+                    class="nav-icon"
+                    focusable="false"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M2,13H22v6a1,1,0,0,1-1,1H3a1,1,0,0,1-1-1V13ZM22,8v4H2V8A1,1,0,0,1,3,7H7V6a3,3,0,0,1,3-3h4a3,3,0,0,1,3,3V7h4A1,1,0,0,1,22,8ZM15,6a1,1,0,0,0-1-1H10A1,1,0,0,0,9,6V7h6V6Z"
+                      class="inactive-item"
+                      style="fill-opacity: 1"
+                    ></path>
+                    <path
+                      d="M21,7H17V6a3,3,0,0,0-3-3H10A3,3,0,0,0,7,6V7H3A1,1,0,0,0,2,8V19a1,1,0,0,0,1,1H21a1,1,0,0,0,1-1V8A1,1,0,0,0,21,7ZM9,6a1,1,0,0,1,1-1h4a1,1,0,0,1,1,1V7H9V6ZM20,18H4V13H20v5Zm0-6H4V9H20v3Z"
+                      class="active-item"
+                      style="fill: currentColor"
+                    ></path>
+                  </svg>
+                  <span>Majoration</span>
+                </a>
+              </li>
+              <!-- <li class="nav__item">
+                <a href="#">
+                  <svg
+                    viewBox="0 0 24 24"
+                    width="24px"
+                    height="24px"
+                    x="0"
+                    y="0"
+                    preserveAspectRatio="xMinYMin meet"
+                    class="nav-icon"
+                    focusable="false"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M21,8H8A1,1,0,0,0,7,9V19a1,1,0,0,0,1,1H18l4,3V9A1,1,0,0,0,21,8Zm-4,8H12V15h5Zm1-3H11V12h7ZM17,4V6H6A1,1,0,0,0,5,7v8H3a1,1,0,0,1-1-1V4A1,1,0,0,1,3,3H16A1,1,0,0,1,17,4Z"
+                      class="inactive-item"
+                      style="fill-opacity: 1"
+                    ></path>
+                    <path
+                      d="M21,8H8A1,1,0,0,0,7,9V19a1,1,0,0,0,1,1H18l4,3V9A1,1,0,0,0,21,8ZM20,19.11L18.52,18H9V10H20v9.11ZM12,15h5v1H12V15ZM4,13H5v2H3a1,1,0,0,1-1-1V4A1,1,0,0,1,3,3H16a1,1,0,0,1,1,1V6H15V5H4v8Zm14,0H11V12h7v1Z"
+                      class="active-item"
+                      style="fill: currentColor"
+                    ></path>
+                  </svg>
+                  <span>Réservation</span>
+                </a>
+              </li> -->
+              <li class="nav__item">
+                <a href="../admin/index.html">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                    <path fill="none" d="M0 0h24v24H0z"/>
+                    <path d="M12 2C6.48 2 2 6.48 2 12c0 3.04 1.18 5.84 3.11 7.94.19.24.47.38.77.38.28 0 .55-.11.75-.31L12 18l5.36 1.97c.2.07.41.03.56-.1C20.82 17.83 22 15.04 22 12c0-5.52-4.48-10-10-10zm0 16c-2.67 0-5.02-1.5-6.22-3.71C6.18 12.44 8.39 10 12 10s5.82 2.44 6.22 4.29c-1.2 2.21-3.55 3.71-6.22 3.71z"/>
+                  </svg>
+                  <span>Admin</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <script src="js/header-4.js"></script>
+  </body>
+</html>
